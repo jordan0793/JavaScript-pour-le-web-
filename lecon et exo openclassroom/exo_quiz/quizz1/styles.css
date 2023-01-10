@@ -1,0 +1,24 @@
+.quiz-question {
+  display: flex;
+}
+.quiz-numero {
+  display: flex;
+  width: 15%;
+}
+.quiz-txt {
+  display: flex;
+}
+ol {
+  list-style-type: upper-alpha;
+}
+
+.sentenceInRed {
+  color: red;
+}
+/* input[type="radio"] {
+  display: none;
+} cette formule sert à enlever les boutons*/
+/* input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: red;
+} */

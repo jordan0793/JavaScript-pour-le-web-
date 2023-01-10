@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Corps de la page */ 
+  body{
+    
+    background-color:#fff;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .container {
+    position: absolute;
+  }
+
+  .page{
+    background-color: rgba(234, 231, 225, 0.5);
+    display:flex;
+    flex-wrap: wrap;
+    width:90vw;
+    margin:5vw auto;
+  }
+              /* header et bouton fermer de la navigation*/
+  header, .buttonClose {
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    display:flex;
+    justify-content: end;
+
+    /* Utilisation de la méthode blanco pour le placement du menu */
+  }
+                     /* Marge de la page*/
+  .gauche{
+    width:60%;
+  }
+  
+  .droite{
+    width:40%;
+    padding: 5vw ;  
+  }
+                    /* Media Queries */
+  @media screen and (max-width: 900px) {
+    .gauche{
+      width:100%;
+    }
+    .droite{
+      width:100%;
+      padding: 5vw ;
+    }
+  }
+                /* Insertion Image */
+  .gauche img {
+    width:100%;
+    height:auto;
+  }
+  
+  .droite p{
+    font-size: 1em;
+    line-height: 2em;
+  }
+                   /* Texte */
+  .artiste {
+    font-size: 0.7em;
+    padding-bottom: 4em;
+  }
+  
+  .droite h1 {
+    font-family: 'Lora', serif;
+    font-size: 4em;
+    padding-bottom: 1em;
+    font-style: italic;
+  }
+
+                  /* Navigation*/ 
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0; 
+    list-style-type: none;
+    background-color: #333;
+    
+    } 
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      display: flex; 
+    }
+
+    ul>li>a {
+      display: flex;
+      align-items: center;
+      padding-top: 30%;
+     
+    }
+                      /* Couleur des liens*/
+
+    .buttonClose>li>a, ul>li>a, .buttonClose a  {
+      color:#eee;
+    }
+    header a{
+      color: black;
+    }
+                     /*  Classe cachant le menu navigation*/
+.menu{
+visibility: hidden;
+} 
+     
